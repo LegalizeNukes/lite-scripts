@@ -47,7 +47,7 @@ var USER_CONFIG = {
 
 - `BLOCKED_COUNTRIES` — locations to filter. Leave the array empty to disable location-based filtering.
 - `BLOCKED_POST_ACTION` — controls how matching posts are handled: `hide`, `highlight`, `dim`, or `collapse`.
-- `COMMUNITY_CACHE` — when `true`, checks the shared community cache first for account-location data. If no cached result is available, the script can fall back to X's API according to `REQUIRE_INTERACTION`.
+- `COMMUNITY_CACHE` — when `true`, checks the shared community cache first for account-location data. If no cached result is available, the script can fall back to X's API according to `REQUIRE_INTERACTION`. Requires a separate userscript extension on Brave, does not work with scriptlets.
 - `REQUIRE_INTERACTION` — when `true`, direct X API lookups require clicking the question-mark indicator; community-cache lookups can still run automatically. When `false`, missing locations can also be fetched automatically from X.
 
 # Brave Custom Scriptlets
