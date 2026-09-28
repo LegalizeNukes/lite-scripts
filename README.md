@@ -26,7 +26,7 @@ The lower **Brave Custom Scriptlets** section is specifically for Brave Browser'
 | `Location Blocking X.user.js` | Displays X account locations and optionally filters posts. | [x-account-location-device](https://github.com/xaitax/x-account-location-device) |
 | `Redirect Google Maps.user.js` | Opens coordinate-based Google Maps links in Apple Maps. | — |
 | `Redirect Imgur.user.js` | Redirects Imgur pages to Rimgo. | — |
-| `Redirect Instagram.user.js` | Keeps Instagram reels and stories on the web and blocks App Store handoffs. | — |
+| `Redirect Instagram.user.js` | Redirects Instagram pages to Imginn. | — |
 | `Redirect X.user.js` | Redirects supported X pages to Xcancel. | — |
 | `Return Dislikes YouTube.user.js` | Restores YouTube dislike counts. | [Return YouTube Dislike userscript](https://github.com/Anarios/return-youtube-dislike/raw/main/Extensions/UserScript/Return%20Youtube%20Dislike.user.js) |
 | `SponsorBlock YouTube.user.js` | Skips SponsorBlock segments in YouTube videos. | [sb.js](https://github.com/mchangrh/sb.js) |
