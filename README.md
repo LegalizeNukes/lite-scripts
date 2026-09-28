@@ -23,6 +23,7 @@ The lower **Brave Custom Scriptlets** section is specifically for Brave Browser'
 | --- | --- | --- |
 | `Bypass Paywalls.user.js` | Removes paywall barriers on supported sites. | [Bypass Paywalls Clean Filters](https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters) |
 | `DeArrow Titles YouTube.user.js` | Replaces YouTube titles with DeArrow titles. | [DeArrow](https://github.com/ajayyy/DeArrow) |
+| `Hide Nav Bars.user.js` | Hides fixed or sticky top and bottom navigation bars on X and YouTube while scrolling down, then restores them when scrolling up. | — |
 | `Location Blocking X.user.js` | Displays X account locations and optionally filters posts. | [x-account-location-device](https://github.com/xaitax/x-account-location-device) |
 | `Redirect Google Maps.user.js` | Opens coordinate-based Google Maps links in Apple Maps. | — |
 | `Redirect Imgur.user.js` | Redirects Imgur pages to Rimgo. | — |
@@ -31,23 +32,23 @@ The lower **Brave Custom Scriptlets** section is specifically for Brave Browser'
 | `Return Dislikes YouTube.user.js` | Restores YouTube dislike counts. | [Return YouTube Dislike userscript](https://github.com/Anarios/return-youtube-dislike/raw/main/Extensions/UserScript/Return%20Youtube%20Dislike.user.js) |
 | `SponsorBlock YouTube.user.js` | Skips SponsorBlock segments in YouTube videos. | [sb.js](https://github.com/mchangrh/sb.js) |
 
-### Location Blocking X configuration
+### Location Blocking X preferences
 
 `Location Blocking X.user.js` has optional settings near the top of the script:
 
 ```js
 var USER_CONFIG = {
-    BLOCKED_COUNTRIES: ['cuba', 'chad', 'southeast asia'],
+    BLOCKED_COUNTRIES: [],
     BLOCKED_POST_ACTION: 'hide',
-    // 'hide'      = completely removes matching posts
-    // 'highlight' = keeps matching posts visible with a red border
-    // 'dim'       = darkens matching posts until hovered
-    // 'collapse'  = replaces matching posts with a compact notice that can be clicked/tapped to reveal them
+    COMMUNITY_CACHE: true,
     REQUIRE_INTERACTION: true
-    // true  = checks only after user interaction, with no delay
-    // false = checks automatically, spacing API requests 3 seconds apart
 };
 ```
+
+- `BLOCKED_COUNTRIES` — locations to filter. Leave the array empty to disable location-based filtering.
+- `BLOCKED_POST_ACTION` — controls how matching posts are handled: `hide`, `highlight`, `dim`, or `collapse`.
+- `COMMUNITY_CACHE` — when `true`, checks the shared community cache first for account-location data. If no cached result is available, the script can fall back to X's API according to `REQUIRE_INTERACTION`.
+- `REQUIRE_INTERACTION` — when `true`, direct X API lookups require clicking the question-mark indicator; community-cache lookups can still run automatically. When `false`, missing locations can also be fetched automatically from X.
 
 # Brave Custom Scriptlets
 
@@ -99,6 +100,22 @@ Custom filter:
 
 ```js
 youtube.com##+js(user-dearrow-titles-youtube.js)
+```
+
+## Hide Nav Bars
+
+### Setup
+
+Scriptlet:
+
+```txt
+user-hide-nav-bars.js
+```
+
+Custom filter:
+
+```js
+x.com,youtube.com##+js(user-hide-nav-bars.js)
 ```
 
 ## Location Blocking X
