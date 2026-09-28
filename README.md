@@ -23,7 +23,7 @@ The lower **Brave Custom Scriptlets** section is specifically for Brave Browser'
 | --- | --- | --- |
 | `Bypass Paywalls.user.js` | Removes paywall barriers on supported sites. | [Bypass Paywalls Clean Filters](https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters) |
 | `DeArrow Titles YouTube.user.js` | Replaces YouTube titles with DeArrow titles. | [DeArrow](https://github.com/ajayyy/DeArrow) |
-| `Hide Nav Bars.user.js` | Hides fixed or sticky top and bottom navigation bars on X and YouTube while scrolling down, then restores them when scrolling up. | — |
+| `Hide Nav Bars.user.js` | Hides fixed or sticky top and bottom navigation bars while scrolling down, then restores them when scrolling up. Matched sites can be customized. Intended for mobile devices. | — |
 | `Location Blocking X.user.js` | Displays X account locations and optionally filters posts. | [x-account-location-device](https://github.com/xaitax/x-account-location-device) |
 | `Redirect Google Maps.user.js` | Opens coordinate-based Google Maps links in Apple Maps. | — |
 | `Redirect Imgur.user.js` | Redirects Imgur pages to Rimgo. | — |
