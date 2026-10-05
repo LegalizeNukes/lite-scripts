@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         SponsorBlock YouTube
-// @match        https://*.youtube.com/watch/*
+// @match        https://*.youtube.com/watch*
 // @run-at       document-start
 // @grant        none
 // ==/UserScript==
