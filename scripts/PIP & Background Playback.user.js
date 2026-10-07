@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name         PIP & Background Playback
 // @match        https://*.youtube.com/*
+// @match        https://*.x.com/*
 // @run-at       document-start
 // @inject-into  page
 // @grant        none
