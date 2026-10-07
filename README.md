@@ -4,6 +4,10 @@ Lightweight userscripts for common video, social-media, navigation, and reading-
 
 The `.user.js` files are the canonical versions in this repository. They can be installed with userscript managers such as Tampermonkey, Violentmonkey, or Greasemonkey. Brave Browser is also supported for the scripts listed in the **Brave Custom Scriptlets** section.
 
+All userscripts in **Lite Scripts** are distributed in minified form. Minification removes unnecessary whitespace and comments and, where appropriate, compacts internal code so the installed scripts stay small and lightweight. This reduces file size and repository clutter and can marginally reduce download and parsing overhead; it is not intended to change script behavior or act as obfuscation.
+
+Userscript metadata and deliberately user-editable configuration, such as the `USER_CONFIG` block in **X-Posed Lite**, remain readable where needed.
+
 > [!WARNING]
 > Always review third-party code before executing it in your browser environment.
 
@@ -12,12 +16,6 @@ The `.user.js` files are the canonical versions in this repository. They can be 
 ### Userscript managers
 
 Install the corresponding `.user.js` file in your userscript manager. Keep the userscript metadata block at the top of each file so the manager can identify its name, matching sites, execution timing, and permissions.
-
-### Minified userscripts
-
-All userscripts in **Lite Scripts** are distributed in minified form. Minification removes unnecessary whitespace and comments and, where appropriate, compacts internal code so the installed scripts stay small and lightweight. This reduces file size and repository clutter and can marginally reduce download and parsing overhead; it is not intended to change script behavior or act as obfuscation.
-
-Userscript metadata and deliberately user-editable configuration, such as the `USER_CONFIG` block in **X-Posed Lite**, remain readable where needed.
 
 ## Included userscripts
 
