@@ -22,7 +22,7 @@ Install the corresponding `.user.js` file in your userscript manager. Keep the u
 | File | Purpose | Adapted from |
 | --- | --- | --- |
 | `Bypass Paywalls Lite.user.js` | Removes or works around paywall barriers on supported sites. | [Bypass Paywalls Clean Filters](https://gitflic.ru/project/magnolia1234/bypass-paywalls-clean-filters) |
-| `Hide Navigation Bars.user.js` | Automatically hides detected fixed or sticky navigation bars after a small scroll on supported sites, while leaving excluded video pages alone. Intended primarily for mobile browsers. | — |
+| `Hide Navigation Bars.user.js` | Automatically hides detected fixed or sticky navigation bars after a small scroll on supported sites, while leaving excluded video pages alone. Intended primarily for mobile Safari. | — |
 | `PIP & Background Playback.user.js` | Restores background playback and improves native Picture-in-Picture handling on mobile Safari. | — |
 | `Redirect Google Maps.user.js` | Opens coordinate-based Google Maps links in Apple Maps. | — |
 | `Redirect Instagram.user.js` | Redirects Instagram pages to Imginn. | — |
